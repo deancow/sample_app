@@ -1,0 +1,1 @@
+sample app to test static files
