@@ -1,2 +1,2 @@
-<title>RUBY ON RAILS TUTORIAL sample app | home</title>
+<title>RUBY ON RAILS TUTORIAL sample app | <%= @title %></title>
 <p>Find me in app/views/pages/home.html.erb</p>

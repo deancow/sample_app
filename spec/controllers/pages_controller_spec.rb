@@ -2,7 +2,14 @@ require 'spec_helper'
 
 describe PagesController do
 render_views
-  describe "GET 'home'" do
+
+before(:each) do
+	#
+	 #define @base_title here
+	#
+end
+
+  describe "get 'home'" do
     it "should be successful" do
       get 'home'
       response.should be_success
@@ -11,11 +18,11 @@ render_views
     it "should have the right title" do
 	    get 'home'
 	    response.should have_selector("title",
-					  :content => "RUBY ON RAILS TUTORIAL sample app | home")
+					  :content => @base_title + " | home")
     end
   end
 
-  describe "GET 'contact'" do
+  describe "get 'contact'" do
     it "should be successful" do
       get 'contact'
       response.should be_success
@@ -23,7 +30,7 @@ render_views
      it "should have the right title" do
 	    get 'contact'
 	    response.should have_selector("title",
-					  :content => "RUBY ON RAILS TUTORIAL sample app | contact")
+					  :content => @base_title + " | contact")
     end
   end
   describe "GET 'about" do
@@ -34,7 +41,7 @@ render_views
      it "should have the right title" do
 	    get 'about'
 	    response.should have_selector("title",
-					  :content => "RUBY ON RAILS TUTORIAL sample app | about")
+					  :content => @base_title + " about")
     end
   end
 
