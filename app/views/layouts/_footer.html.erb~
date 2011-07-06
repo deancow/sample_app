@@ -1,0 +1,11 @@
+<footer>
+		
+		<nav class="round">
+		<ul>
+			<li><%= link_to "about", '#' %></li>
+			<li><%= link_to "contact", '#' %></li>
+			<li><a href=ffuguh>ihihi</a></li>
+		</ul>
+
+		</nav>
+		</footer>
